@@ -1,28 +1,36 @@
+import React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
-import { type ComponentProps } from "react";
 import { twMerge } from "tailwind-merge";
 
 type BaseProps = VariantProps<typeof buttonStyles> & {
-  children: React.ReactNode;
   className?: string;
+  children: React.ReactNode;
 };
 
-type ButtonElementProps = ComponentProps<"button"> & {
-  href?: never;
-};
+export type ButtonAsButtonProps = BaseProps &
+  Omit<
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    "className" | "children" | "href"
+  > & {
+    href?: never;
+  };
 
-type LinkElementProps = ComponentProps<"a"> & {
-  href: string;
-};
+export type ButtonAsAnchorProps = BaseProps &
+  Omit<
+    React.AnchorHTMLAttributes<HTMLAnchorElement>,
+    "className" | "children"
+  > & {
+    href: string;
+  };
 
-type ButtonProps = BaseProps & (ButtonElementProps | LinkElementProps);
+export type ButtonProps = ButtonAsButtonProps | ButtonAsAnchorProps;
 
 const buttonStyles = cva(
   "inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       intent: {
-        primary: "bg-brand text-white hover:bg-brand/90",
+        primary: "bg-brand text-text-primary hover:bg-brand/90",
         secondary:
           "bg-surface-muted text-text-primary hover:bg-surface-muted/80",
         ghost: "hover:bg-surface-muted hover:text-text-primary",
@@ -40,24 +48,41 @@ const buttonStyles = cva(
   }
 );
 
-export const Button = ({
-  intent,
-  size,
-  className,
-  children,
-  ...props
-}: ButtonProps) => {
-  const isLink = "href" in props && props.href !== undefined;
-  const Component = isLink ? "a" : "button";
+export const Button = React.forwardRef<
+  HTMLButtonElement | HTMLAnchorElement,
+  ButtonProps
+>((props, ref) => {
+  if ("href" in props) {
+    const { intent, size, className, children, href, ...rest } =
+      props as ButtonAsAnchorProps;
+    const cls = twMerge(buttonStyles({ intent, size }), className);
 
-  const buttonType = !isLink && !("type" in props) ? { type: "button" } : {};
+    return (
+      <a
+        ref={ref as React.Ref<HTMLAnchorElement>}
+        href={href}
+        className={cls}
+        {...rest}
+      >
+        {children}
+      </a>
+    );
+  }
+
+  const { intent, size, className, children, type, ...rest } =
+    props as ButtonAsButtonProps;
+  const cls = twMerge(buttonStyles({ intent, size }), className);
 
   return (
-    <Component
-      className={twMerge(buttonStyles({ intent, size, className }))}
-      {...props}
+    <button
+      ref={ref as React.Ref<HTMLButtonElement>}
+      className={cls}
+      type={type ?? "button"}
+      {...rest}
     >
       {children}
-    </Component>
+    </button>
   );
-};
+});
+
+Button.displayName = "Button";

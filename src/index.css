@@ -1,7 +1,5 @@
-@import "tailwindcss";
-
 @theme {
-  --color-brand: hsl(140, 50%, 60%);
+  --color-brand: hsl(139, 66%, 59%);
   --color-brand-muted: hsl(140, 50%, 95%);
   --color-surface: hsl(0, 0%, 100%);
   --color-surface-muted: hsl(220, 13%, 95%);
@@ -36,14 +34,27 @@
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
   --radius-full: 9999px;
+}
 
-  [data-theme="dark"] {
-    --color-brand: hsl(140, 45%, 65%);
-    --color-brand-muted: hsl(140, 20%, 15%);
-    --color-surface: hsl(220, 15%, 10%);
-    --color-surface-muted: hsl(220, 15%, 15%);
-    --color-text-primary: hsl(220, 15%, 95%);
-    --color-text-muted: hsl(220, 10%, 65%);
-    --color-border: hsl(220, 10%, 30%);
-  }
+:root[data-theme="dark"] {
+  --color-brand: hsl(139, 66%, 59%);
+  --color-brand-muted: hsl(140, 20%, 15%);
+  --color-surface: hsl(220, 15%, 10%);
+  --color-surface-muted: hsl(220, 15%, 15%);
+  --color-text-primary: hsl(220, 15%, 95%);
+  --color-text-muted: hsl(220, 10%, 65%);
+  --color-border: hsl(220, 10%, 30%);
+}
+
+@import "tailwindcss";
+
+html,
+body,
+#storybook-root,
+#root {
+  height: 100%;
+}
+body {
+  background: var(--color-surface);
+  color: var(--color-text-primary);
 }

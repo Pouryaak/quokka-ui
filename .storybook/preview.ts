@@ -1,5 +1,9 @@
 import type { Preview } from "@storybook/react-vite";
-import { withThemeByDataAttribute } from "@storybook/addon-themes";
+import {
+  withThemeByClassName,
+  withThemeByDataAttribute,
+} from "@storybook/addon-themes";
+import "../src/index.css";
 
 const preview: Preview = {
   parameters: {
@@ -12,12 +16,10 @@ const preview: Preview = {
   },
   decorators: [
     withThemeByDataAttribute({
-      themes: {
-        light: "light",
-        dark: "dark",
-      },
-      defaultTheme: "light",
       attributeName: "data-theme",
+      themes: { light: "light", dark: "dark" },
+      defaultTheme: "light",
+      parentSelector: "html",
     }),
   ],
 };
