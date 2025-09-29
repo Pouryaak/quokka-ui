@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+
+    "jsx": "preserve",
+
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": ["src"],
+
+  "exclude": ["node_modules", "dist"]
+}

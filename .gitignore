@@ -1,0 +1,57 @@
+# Node / package managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json.*
+npm-packages-offline-cache/
+
+# Build outputs
+dist/
+.storybook-out/
+storybook-static/
+.vite/
+vite.config.timestamp-*.mjs
+
+# Storybook cache
+.storybook-cache/
+node_modules/.cache/
+sb-cache/
+**/.cache/
+
+# Test / coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# Env & secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+*.pid
+*.pid.lock
+
+# Misc
+.eslintcache
+.stylelintcache
+.turbo/
+.tmp/
+temp/
+tmp/
+
+# CI artifacts
+reports/

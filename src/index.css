@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: hsl(140, 50%, 60%);
+  --color-brand-muted: hsl(140, 50%, 95%);
+  --color-surface: hsl(0, 0%, 100%);
+  --color-surface-muted: hsl(220, 13%, 95%);
+  --color-text-primary: hsl(220, 10%, 20%);
+  --color-text-muted: hsl(220, 8%, 45%);
+  --color-border: hsl(220, 10%, 85%);
+
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-full: 9999px;
+
+  [data-theme="dark"] {
+    --color-brand: hsl(140, 45%, 65%);
+    --color-brand-muted: hsl(140, 20%, 15%);
+    --color-surface: hsl(220, 15%, 10%);
+    --color-surface-muted: hsl(220, 15%, 15%);
+    --color-text-primary: hsl(220, 15%, 95%);
+    --color-text-muted: hsl(220, 10%, 65%);
+    --color-border: hsl(220, 10%, 30%);
+  }
+}
