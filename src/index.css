@@ -37,7 +37,7 @@
 }
 
 :root[data-theme="dark"] {
-  --color-brand: hsl(139, 66%, 59%);
+  --color-brand: hsl(139, 47%, 51%);
   --color-brand-muted: hsl(140, 20%, 15%);
   --color-surface: hsl(220, 15%, 10%);
   --color-surface-muted: hsl(220, 15%, 15%);
