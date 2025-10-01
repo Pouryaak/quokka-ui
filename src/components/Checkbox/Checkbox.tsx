@@ -131,7 +131,7 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
           </label>
         </div>
 
-        {(hasError || helperText) && ( // 👈
+        {(hasError || helperText) && (
           <div
             id={descId}
             className={twMerge(
