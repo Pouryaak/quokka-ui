@@ -18,6 +18,7 @@ const meta: Meta<typeof Card> = {
           "- Renders as a `<section>` by default (configurable via `as`).",
           "- Provide `title` to name the region (SSR-safe via `aria-label`).",
           "- Use `Card.Header` for visual titles, `Card.Body` for content, and `Card.Footer` for actions.",
+          "- Use `Card.Media` for a full-bleed top media area (image/video/custom).",
         ].join("\n"),
       },
     },
