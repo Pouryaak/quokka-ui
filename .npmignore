@@ -1,0 +1,13 @@
+# Ignore local development files
+.storybook
+src
+stories
+public
+
+# Ignore config files
+.eslintrc.js
+postcss.config.js
+tsconfig.json
+
+# Ignore node_modules
+node_modules
