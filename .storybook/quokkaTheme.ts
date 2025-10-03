@@ -1,84 +1,14 @@
-// // .storybook/quokkaTheme.ts
-// import { create } from "storybook/theming";
-
-// const brand = {
-//   orange: "#F15A29",
-//   brown: "#1cf73c",
-//   ink: "#14110F",
-//   fog: "#F7F6F5",
-// };
-
-// export const quokkaLight = create({
-//   base: "light",
-
-//   brandTitle: "Quokka UI",
-//   brandUrl: "https://your-domain.com",
-//   brandImage: "/brand/qoukka.svg",
-//   brandTarget: "_self",
-
-//   colorPrimary: brand.brown,
-//   colorSecondary: brand.orange,
-
-//   appBg: "#FFFFFF",
-//   appContentBg: "#FFFFFF",
-//   appBorderColor: "rgba(0,0,0,0.08)",
-//   appBorderRadius: 12,
-
-//   textColor: brand.ink,
-//   textInverseColor: "#FFFFFF",
-
-//   fontBase: "Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI",
-//   fontCode: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
-
-//   barTextColor: "rgba(20,17,15,0.75)",
-//   barSelectedColor: brand.orange,
-//   barBg: brand.fog,
-// });
-
-// export const quokkaDark = create({
-//   base: "dark",
-
-//   brandTitle: "Quokka UI",
-//   brandUrl: "https://your-domain.com",
-//   brandImage: "/brand/qoukka.svg",
-//   brandTarget: "_self",
-
-//   colorPrimary: brand.orange,
-//   colorSecondary: brand.orange,
-
-//   appBg: "#0B0F14",
-//   appContentBg: "#0F141A",
-//   appBorderColor: "rgba(255,255,255,0.08)",
-//   appBorderRadius: 12,
-
-//   textColor: "#EAE7E5",
-//   textInverseColor: "#0B0F14",
-
-//   fontBase: "Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI",
-//   fontCode: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
-
-//   barTextColor: "rgba(234,231,229,0.8)",
-//   barSelectedColor: brand.orange,
-//   barBg: "#0F141A",
-// });
-
-// .storybook/quokkaTheme.ts
 import { create } from "storybook/theming";
 
-/**
- * Match your design tokens:
- * light  -> :root { --color-... }
- * dark   -> :root[data-theme="dark"] { --color-... }
- */
 const tokens = {
   light: {
-    brand: "hsl(139 66% 59%)", // --color-brand
-    brandMuted: "hsl(140 50% 95%)", // --color-brand-muted
-    surface: "hsl(0 0% 100%)", // --color-surface
-    surfaceMuted: "hsl(220 13% 95%)", // --color-surface-muted
-    text: "hsl(220 10% 20%)", // --color-text-primary
-    textMuted: "hsl(220 8% 45%)", // --color-text-muted
-    border: "hsl(220 10% 85%)", // --color-border
+    brand: "hsl(139 66% 59%)",
+    brandMuted: "hsl(140 50% 95%)",
+    surface: "hsl(0 0% 100%)",
+    surfaceMuted: "hsl(220 13% 95%)",
+    text: "hsl(220 10% 20%)",
+    textMuted: "hsl(220 8% 45%)",
+    border: "hsl(220 10% 85%)",
   },
   dark: {
     brand: "hsl(139 47% 51%)",
@@ -91,13 +21,12 @@ const tokens = {
   },
 };
 
-/** ---------- Manager (sidebar/topbar) themes ---------- */
 export const quokkaLight = create({
   base: "light",
 
   brandTitle: "Quokka UI",
-  brandUrl: "https://your-domain.com",
-  brandImage: "/brand/quokka.svg",
+  brandUrl: "https://pouryaak.github.io/quokka-ui",
+  brandImage: "brand/quokka.svg",
   brandTarget: "_self",
 
   colorPrimary: tokens.light.brand,
@@ -123,8 +52,8 @@ export const quokkaDark = create({
   base: "dark",
 
   brandTitle: "Quokka UI",
-  brandUrl: "https://your-domain.com",
-  brandImage: "/brand/quokka.svg", // white/mono mark recommended on dark
+  brandUrl: "https://pouryaak.github.io/quokka-ui",
+  brandImage: "brand/quokka.svg",
   brandTarget: "_self",
 
   colorPrimary: tokens.dark.brand,
@@ -146,7 +75,6 @@ export const quokkaDark = create({
   barSelectedColor: tokens.dark.brand,
 });
 
-/** ---------- Docs themes (used by ArgsTable, MDX, etc.) ---------- */
 export const quokkaDocsLight = create({
   base: "light",
   brandTitle: "Quokka UI",
