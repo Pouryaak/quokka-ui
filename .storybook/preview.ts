@@ -35,7 +35,6 @@ const preview: Preview = {
           "Feedback",
           ["Spinner"],
         ],
-        method: "alphabetical",
         includeNames: true,
       },
     },
