@@ -1,11 +1,6 @@
 import type { Preview } from "@storybook/react-vite";
-import {
-  withThemeByClassName,
-  withThemeByDataAttribute,
-} from "@storybook/addon-themes";
+import { withThemeByDataAttribute } from "@storybook/addon-themes";
 import "../src/index.css";
-import { themes } from "storybook/theming";
-import { getDocsTheme } from "./quokkaTheme";
 
 const preview: Preview = {
   parameters: {
@@ -18,6 +13,31 @@ const preview: Preview = {
     backgrounds: {
       default: "transparent",
       values: [{ name: "transparent", value: "transparent" }],
+    },
+    options: {
+      storySort: {
+        order: [
+          "Introduction",
+          ["Welcome", "Installation", "Changelog"],
+
+          "Components",
+          [
+            "Button",
+            "Card",
+            "Checkbox",
+            "Input",
+            "Select",
+            "Table",
+            "Tabs",
+            "Textarea",
+          ],
+
+          "Feedback",
+          ["Spinner"],
+        ],
+        method: "alphabetical",
+        includeNames: true,
+      },
     },
   },
   decorators: [
