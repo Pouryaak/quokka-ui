@@ -4,6 +4,8 @@ import {
   withThemeByDataAttribute,
 } from "@storybook/addon-themes";
 import "../src/index.css";
+import { themes } from "storybook/theming";
+import { getDocsTheme } from "./quokkaTheme";
 
 const preview: Preview = {
   parameters: {
@@ -12,6 +14,10 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
+    },
+    backgrounds: {
+      default: "transparent",
+      values: [{ name: "transparent", value: "transparent" }],
     },
   },
   decorators: [

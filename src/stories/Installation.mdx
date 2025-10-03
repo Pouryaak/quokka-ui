@@ -1,0 +1,250 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import React from "react";
+
+<Meta title="Introduction/Installation" />
+
+<section className="relative isolate overflow-hidden rounded-3xl border border-border/40 bg-surface p-10 shadow-sm mb-10">
+  <div
+    className="pointer-events-none absolute -inset-24 -z-10 blur-3xl opacity-70"
+    style={{
+      background:
+        "radial-gradient(1200px 400px at 10% 10%, color-mix(in oklab, var(--color-brand), white 70%) 0%, transparent 60%), radial-gradient(800px 300px at 95% 0%, color-mix(in oklab, var(--color-brand), black 72%) 0%, transparent 60%)",
+    }}
+  />
+  <div className="space-y-4">
+    <div className="inline-flex items-center gap-2 rounded-full border border-border/40 bg-surface-muted/60 px-3 py-1 text-xs text-text-muted">
+      <span>Getting Started</span>
+      <span className="h-1 w-1 rounded-full bg-border" />
+      <span>Quokka UI</span>
+    </div>
+    <h1 className="m-0 text-4xl font-extrabold leading-tight tracking-tight text-text-primary sm:text-5xl">
+      Installation
+    </h1>
+    <p className="m-0 max-w-[70ch] text-base sm:text-lg text-text-muted">
+      Integrate Quokka UI into your project in a few clean steps. Tailwind
+      assumed.
+    </p>
+  </div>
+</section>
+
+<div className="flex flex-col gap-16 mt-10">
+
+{/* --- Step 1 --- */}
+
+  <div className="grid items-start gap-8 md:grid-cols-4">
+    <div className="md:col-span-1">
+      <div className="flex items-center gap-3">
+        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/15 text-sm font-bold text-brand">1</div>
+        <h2 className="m-0 text-xl font-semibold text-text-primary">Install Package</h2>
+      </div>
+      <p className="mt-3 text-text-muted">
+        Add the library to your project using your preferred package manager.
+      </p>
+    </div>
+
+    <div className="md:col-span-3">
+      <div
+        className="relative overflow-hidden rounded-2xl border border-border/40 bg-surface/80 shadow-sm backdrop-blur"
+        style={{ boxShadow: "0 1px 0 0 rgba(255,255,255,0.06) inset, 0 40px 80px -30px rgba(0,0,0,0.25)" }}
+      >
+        <div
+          className="flex items-center justify-between border-b border-border/40 px-4 py-2"
+          style={{
+            background:
+              "linear-gradient(180deg, color-mix(in oklab, var(--color-surface), white 12%) 0%, color-mix(in oklab, var(--color-surface), black 6%) 100%)",
+          }}
+        >
+          <div className="flex items-center gap-1.5">
+            <div className="h-2.5 w-2.5 rounded-full bg-red-400"></div>
+          <div className="h-2.5 w-2.5 rounded-full bg-gray-300"></div>
+          <div className="h-2.5 w-2.5 rounded-full bg-green-600"></div>
+          </div>
+          <span className="text-xs text-text-muted">Terminal</span>
+          <span className="rounded-md bg-surface-muted/70 px-2 py-0.5 text-[10px] tracking-wide text-text-muted">npm</span>
+        </div>
+
+        <pre
+          className="m-0 max-h-[220px] overflow-x-auto overflow-y-auto p-5 text-[13.5px] leading-relaxed text-text-primary font-mono"
+          style={{ tabSize: 2, whiteSpace: "pre" }}
+        >
+          <code>
+
+{`npm install quokka-ui`}
+
+</code>
+</pre>
+</div>
+
+      <div className="mt-3 text-xs text-text-muted">
+        Prefer yarn or pnpm? Use <code className="rounded bg-surface px-1 py-0.5">yarn add quokka-ui</code> or <code className="rounded bg-surface px-1 py-0.5">pnpm add quokka-ui</code>.
+      </div>
+    </div>
+
+  </div>
+
+{" "}
+
+<div className="h-px w-full border-t border-dashed border-border/60" />
+
+{/* --- Step 2 --- */}
+
+  <div className="grid items-start gap-8 md:grid-cols-4">
+    <div className="md:col-span-1">
+      <div className="flex items-center gap-3">
+        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/15 text-sm font-bold text-brand">2</div>
+        <h2 className="m-0 text-xl font-semibold text-text-primary">Import Styles</h2>
+      </div>
+      <p className="mt-3 text-text-muted">
+        Import the main stylesheet and Tailwind (if not already) in your global CSS.
+      </p>
+    </div>
+
+    <div className="md:col-span-3">
+      <div className="relative overflow-hidden rounded-2xl border border-border/40 bg-surface/80 shadow-sm backdrop-blur">
+        <div
+          className="flex items-center justify-between border-b border-border/40 px-4 py-2"
+          style={{
+            background:
+              "linear-gradient(180deg, color-mix(in oklab, var(--color-surface), white 12%) 0%, color-mix(in oklab, var(--color-surface), black 6%) 100%)",
+          }}
+        >
+          <div className="flex items-center gap-1.5">
+            <div className="h-2.5 w-2.5 rounded-full bg-red-400"></div>
+          <div className="h-2.5 w-2.5 rounded-full bg-gray-300"></div>
+          <div className="h-2.5 w-2.5 rounded-full bg-green-600"></div>
+          </div>
+          <span className="text-xs text-text-muted">globals.css</span>
+          <span className="rounded-md bg-surface-muted/70 px-2 py-0.5 text-[10px] tracking-wide text-text-muted">css</span>
+        </div>
+        <pre
+          className="m-0 max-h-[260px] overflow-x-auto overflow-y-auto p-5 text-[13.5px] leading-relaxed text-text-primary font-mono"
+          style={{ tabSize: 2, whiteSpace: "pre" }}
+        ><code className="language-css">
+
+{`/_ globals.css _/
+
+@import "quokka-ui/dist/index.css";
+@import "tailwindcss";
+`}
+
+</code></pre>
+</div>
+
+      <p className="mt-3 text-xs text-text-muted">
+        If using CSS modules, ensure this import lives in a global stylesheet.
+      </p>
+    </div>
+
+  </div>
+
+{" "}
+
+<div className="h-px w-full border-t border-dashed border-border/60" />
+
+{/* --- Step 3 --- */}
+
+  <div className="grid items-start gap-8 md:grid-cols-4">
+    <div className="md:col-span-1">
+      <div className="flex items-center gap-3">
+        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/15 text-sm font-bold text-brand">3</div>
+        <h2 className="m-0 text-xl font-semibold text-text-primary">Configure Tailwind</h2>
+      </div>
+      <p className="mt-3 text-text-muted">
+        Include Quokka files in <code className="rounded bg-surface px-1 py-0.5">content</code> and map CSS variables to tokens.
+      </p>
+    </div>
+
+    <div className="md:col-span-3">
+      <div className="relative overflow-hidden rounded-2xl border border-border/40 bg-surface/80 shadow-sm backdrop-blur">
+        <div
+          className="flex items-center justify-between border-b border-border/40 px-4 py-2"
+          style={{
+            background:
+              "linear-gradient(180deg, color-mix(in oklab, var(--color-surface), white 12%) 0%, color-mix(in oklab, var(--color-surface), black 6%) 100%)",
+          }}
+        >
+          <div className="flex items-center gap-1.5">
+            <div className="h-2.5 w-2.5 rounded-full bg-red-400"></div>
+          <div className="h-2.5 w-2.5 rounded-full bg-gray-300"></div>
+          <div className="h-2.5 w-2.5 rounded-full bg-green-600"></div>
+          </div>
+          <span className="text-xs text-text-muted">tailwind.config.js</span>
+          <span className="rounded-md bg-surface-muted/70 px-2 py-0.5 text-[10px] tracking-wide text-text-muted">js</span>
+        </div>
+        <pre
+          className="m-0 max-h-[360px] overflow-x-auto overflow-y-auto p-5 text-[13.5px] leading-relaxed text-text-primary font-mono"
+          style={{ tabSize: 2, whiteSpace: "pre" }}
+        ><code className="language-js">
+
+{`/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './src/**/*.{js,ts,jsx,tsx}',
+    './node_modules/quokka-ui/dist/**/*.js',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        brand: 'var(--color-brand)',
+        surface: 'var(--color-surface)',
+        'surface-muted': 'var(--color-surface-muted)',
+        'text-primary': 'var(--color-text)',
+        'text-muted': 'var(--color-text-muted)',
+        border: 'var(--color-border)',
+      },
+      borderRadius: {
+        xl: '1rem',
+        '2xl': '1.5rem',
+      },
+    },
+  },
+  plugins: [],
+};`}
+
+</code></pre>
+</div>
+<p className="mt-3 text-xs text-text-muted">
+On Tailwind v4, adapt to the new preset export and content paths.
+</p>
+</div>
+
+  </div>
+</div>
+
+<section className="relative mt-20 overflow-hidden rounded-3xl border border-border/40 bg-surface p-10 text-center shadow-sm">
+  <div
+    className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2"
+    style={{
+      background:
+        "linear-gradient(to top, color-mix(in oklab, var(--color-brand), white 85%), transparent)",
+    }}
+  />
+  <h2
+    className="m-0 font-extrabold tracking-tight text-text-primary brand-header"
+    style={{ fontSize: "50px !important", lineHeight: "2.5rem" }}
+  >
+    Ready to Build?
+  </h2>
+  <p
+    className="mt-4 max-w-xl text-lg text-text-muted"
+    style={{ margin: "1rem auto 0 auto" }}
+  >
+    You're all set up. Dive into the component library to see live examples and
+    start building your next great interface.
+  </p>
+
+  <div className="relative z-10 mt-8 flex justify-center gap-3">
+    <a
+      href="?path=/docs/components-button--docs"
+      className="inline-flex h-11 items-center justify-center rounded-md bg-brand px-8 text-lg font-medium text-white shadow-sm transition-transform hover:scale-105"
+    >
+      Browse Components
+    </a>
+    <a
+      href="?path=/story/*"
+      className="inline-flex h-11 items-center justify-center rounded-md bg-surface-muted px-8 text-lg font-medium text-text-primary shadow-sm transition-colors hover:bg-surface-muted/80"
+    >
+      View Stories
+    </a>
+  </div>
+</section>

@@ -1,0 +1,231 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import React from "react";
+
+import { Button } from "../components/Button/Button";
+import { Input } from "../components/Input/Input";
+import { Checkbox } from "../components/Checkbox/Checkbox";
+import { Select } from "../components/Select/Select";
+import { Tabs } from "../components/Tabs/Tabs";
+import { FinalTable } from "../components/table/Table";
+
+<Meta title="Getting Started/Welcome" />
+
+<section className="relative isolate overflow-hidden rounded-3xl border border-border/40 bg-surface p-10 shadow-sm">
+  <div className="pointer-events-none absolute -inset-24 -z-10 blur-3xl opacity-70" style={{background:'radial-gradient(1200px 400px at 10% 10%, color-mix(in oklab, var(--color-brand), white 70%) 0%, transparent 60%), radial-gradient(800px 300px at 95% 0%, color-mix(in oklab, var(--color-brand), black 72%) 0%, transparent 60%)'}} />
+  <div>Quokka UI</div>
+  <div className="grid items-center gap-10 lg:grid-cols-2">
+    <div className="space-y-5">
+      <div className="inline-flex items-center gap-2 rounded-full border border-border/40 bg-surface-muted/60 px-3 py-1 text-xs text-text-muted">
+        <span>Design System</span>
+        <span className="h-1 w-1 rounded-full bg-border" />
+        <span>Tailwind v4</span>
+        <span className="h-1 w-1 rounded-full bg-border" />
+        <span>SSR-friendly</span>
+      </div>
+      <h1 className="m-0 text-4xl font-extrabold leading-tight tracking-tight text-text-primary sm:text-5xl">
+        Build consistent UI, <span className="bg-clip-text text-transparent" style={{backgroundImage:'linear-gradient(90deg, var(--color-text-primary), color-mix(in oklab, var(--color-brand), white 10%))'}}>faster</span>
+      </h1>
+      <p className="m-0 max-w-[60ch] text-lg text-text-muted">
+        Token-driven React components with accessible patterns, dark/light theming, and a clean, extensible API.
+      </p>
+      <div className="flex flex-col gap-6 pt-2">
+      <div className="flex flex-wrap items-center gap-3 pt-2">
+  <a className="inline-flex items-center rounded-lg bg-brand px-5 py-3 text-base font-medium text-on-brand shadow-sm !text-black transition-transform hover:scale-105" href="?path=/docs/overview-installation--docs">Get started</a>
+  <a className="inline-flex items-center rounded-lg border border-border/60 bg-surface-muted/60 px-5 py-3 text-base font-medium !text-black transition-colors hover:bg-surface" href="?path=/docs/components-button--docs">Browse components</a>
+</div>
+      <div className="relative max-w-lg overflow-hidden rounded-xl bg-green-100 p-4 pt-8 shadow-lg mt-6">
+        <div className="absolute top-3 left-4 flex gap-1.5">
+          <div className="h-2.5 w-2.5 rounded-full bg-red-400"></div>
+          <div className="h-2.5 w-2.5 rounded-full bg-gray-300"></div>
+          <div className="h-2.5 w-2.5 rounded-full bg-green-600"></div>
+        </div>
+        <div className="absolute top-2 right-2 flex cursor-pointer items-center gap-1 rounded-md bg-white-100 px-2 py-1 text-xs text-[#9095A1]">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-3 h-3"><path fillRule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a.75.75 0 0 1 1.5 0v1A2.5 2.5 0 0 1 11.5 16H2A2.5 2.5 0 0 1-.5 13.5v-8A2.5 2.5 0 0 1 2 3h1a.75.75 0 0 1 0 1.5H2Z" clipRule="evenodd" /></svg>
+          Copy
+        </div>
+        <pre className="m-0 text-[#E6EDF3]"><code>npm i quokka-ui</code></pre>
+      </div>
+    </div>
+</div>
+    <div className="rounded-2xl border border-border/40 bg-surface p-6 shadow-sm">
+      <div className="grid gap-4">
+        <div className="relative overflow-hidden rounded-xl border border-border/40 bg-surface p-4 glow-card">
+          <div className="mb-2 text-sm font-medium text-text-primary">Buttons</div>
+          <div className="flex flex-wrap gap-2">
+            <Button intent="primary">Primary</Button>
+            <Button intent="secondary">Secondary</Button>
+            <Button intent="ghost">Ghost</Button>
+          </div>
+        </div>
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="relative overflow-hidden rounded-xl border border-border/40 bg-surface p-4 glow-card">
+            <div className="mb-2 text-sm font-medium text-text-primary">Input</div>
+            <div className="space-y-3">
+              <Input aria-label="Email" label="Email" placeholder="you@company.com" />
+              <Input aria-label="Search" variant="subtle" label="Search" placeholder="Find something…" />
+            </div>
+          </div>
+          <div className="relative overflow-hidden rounded-xl border border-border/40 bg-surface p-4 glow-card">
+            <div className="mb-2 text-sm font-medium text-text-primary" >Checkbox</div>
+            <div className="flex flex-col gap-3 space-y-2">
+              <Checkbox label="Notify me" />
+              <Checkbox label="Subscribe to newsletter" helperText="No spam, unsubscribe anytime." />
+            </div>
+          </div>
+        </div>
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="relative overflow-hidden rounded-xl border border-border/40 bg-surface p-4 glow-card">
+            <div className="mb-2 text-sm font-medium text-text-primary">Select</div>
+            <div>
+              <Select defaultValue="apple">
+                <Select.Item value="apple">Apple</Select.Item>
+                <Select.Item value="orange">Orange</Select.Item>
+                <Select.Item value="banana">Banana</Select.Item>
+              </Select>
+            </div>
+          </div>
+          <div className="relative overflow-hidden rounded-xl border border-border/40 bg-surface p-4 glow-card">
+            <div className="mb-2 text-sm font-medium text-text-primary">Tabs</div>
+            <Tabs defaultValue="account">
+              <Tabs.List>
+                <Tabs.Trigger value="account">Account</Tabs.Trigger>
+                <Tabs.Trigger value="billing">Billing</Tabs.Trigger>
+                <Tabs.Trigger value="team">Team</Tabs.Trigger>
+              </Tabs.List>
+            </Tabs>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section className="relative mt-12 overflow-hidden rounded-3xl p-px">
+  <div className="absolute inset-0 -z-10 feature-glow" />
+  <div className="grid gap-4 rounded-3xl bg-surface/80 p-8 backdrop-blur-sm md:grid-cols-3">
+
+    {/* -- Card 1: Accessibility First -- */}
+    <div className="flex flex-col gap-2 rounded-2xl border border-border/40 bg-surface/50 p-5">
+      <div className="flex items-center gap-3">
+        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/20 text-brand">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+            <path d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v1.286a.75.75 0 00.75.75h.008a7.517 7.517 0 014.825 2.066.75.75 0 00.825.078 9.752 9.752 0 003.286-1.61.75.75 0 00-.256-1.332z" />
+            <path d="M14.25 21a9.735 9.735 0 003.25-.555.75.75 0 00.5-.707V18.45a.75.75 0 00-.75-.75h-.008a7.517 7.517 0 01-4.825-2.066.75.75 0 00-.825-.078 9.752 9.752 0 00-3.286 1.61.75.75 0 00.256 1.332A9.707 9.707 0 0014.25 21z" />
+          </svg>
+        </div>
+        <div className="font-semibold text-text-primary">Accessibility First</div>
+      </div>
+      <p className="m-0 text-sm text-text-muted">
+        Built on native HTML elements and headless primitives, ensuring a robust and screen-reader-friendly experience out of the box.
+      </p>
+    </div>
+
+    {/* -- Card 2: Themable -- */}
+    <div className="flex flex-col gap-2 rounded-2xl border border-border/40 bg-surface/50 p-5">
+      <div className="flex items-center gap-3">
+        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/20 text-brand">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+            <path fillRule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-3.362 1.578-6.42 4.086-8.418a.75.75 0 01.819.162z" clipRule="evenodd" />
+          </svg>
+        </div>
+        <div className="font-semibold text-text-primary">Themable</div>
+      </div>
+      <p className="m-0 text-sm text-text-muted">
+        Leverages CSS variables for all styling. Switch between light and dark mode, or create your own theme with ease.
+      </p>
+    </div>
+
+    {/* -- Card 3: Developer Experience -- */}
+    <div className="flex flex-col gap-2 rounded-2xl border border-border/40 bg-surface/50 p-5">
+      <div className="flex items-center gap-3">
+        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/20 text-brand">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+            <path fillRule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 2.25h.75a.75.75 0 01.75.75v18a.75.75 0 01-.75.75h-12a.75.75 0 01-.75-.75v-18A.75.75 0 015.25 3h.75a.75.75 0 01.75-.75zM8.25 6a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018.25 6zm3.75 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 0112 6zm3.75 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 0115.75 6z" clipRule="evenodd" />
+          </svg>
+        </div>
+        <div className="font-semibold text-text-primary">Developer Experience</div>
+      </div>
+      <p className="m-0 text-sm text-text-muted">
+        Fully-typed with TypeScript and built with a composable API to make building complex interfaces intuitive and fast.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<h2 className="mt-12 text-xl font-semibold text-text-primary">
+  Live data view
+</h2>
+<div className="rounded-2xl border border-border/40 bg-surface p-4">
+  <FinalTable frame="framed" className="w-full">
+    <FinalTable.Header>
+      <FinalTable.Row density="compact">
+        <FinalTable.Head density="compact">Name</FinalTable.Head>
+        <FinalTable.Head density="compact">Role</FinalTable.Head>
+        <FinalTable.Head density="compact">Location</FinalTable.Head>
+      </FinalTable.Row>
+    </FinalTable.Header>
+    <FinalTable.Body>
+      <FinalTable.Row density="compact">
+        <FinalTable.Cell density="compact">Ana</FinalTable.Cell>
+        <FinalTable.Cell density="compact">Engineer</FinalTable.Cell>
+        <FinalTable.Cell density="compact">Lisbon</FinalTable.Cell>
+      </FinalTable.Row>
+      <FinalTable.Row density="compact">
+        <FinalTable.Cell density="compact">Bao</FinalTable.Cell>
+        <FinalTable.Cell density="compact">Designer</FinalTable.Cell>
+        <FinalTable.Cell density="compact">Sydney</FinalTable.Cell>
+      </FinalTable.Row>
+      <FinalTable.Row density="compact">
+        <FinalTable.Cell density="compact">Chris</FinalTable.Cell>
+        <FinalTable.Cell density="compact">PM</FinalTable.Cell>
+        <FinalTable.Cell density="compact">NYC</FinalTable.Cell>
+      </FinalTable.Row>
+    </FinalTable.Body>
+  </FinalTable>
+</div>
+
+<h2 className="mt-12 text-xl font-semibold text-text-primary">Theme tokens</h2>
+<p className="m-0 mb-3 text-sm text-text-muted">
+  Switch themes from the toolbar to see these update.
+</p>
+<div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+  {[
+    ["--color-brand", "Brand"],
+    ["--color-surface", "Surface"],
+    ["--color-surface-muted", "Surface muted"],
+    ["--color-text-primary", "Text primary"],
+    ["--color-text-muted", "Text muted"],
+    ["--color-border", "Border"],
+  ].map(([v, l]) => (
+    <div key={v} className="rounded-xl border border-border/40 bg-surface p-3">
+      <div className="h-12 rounded-md" style={{ background: `var(${v})` }} />
+      <div className="mt-2 text-xs text-text-muted">{l}</div>
+      <code className="text-[11px] text-text-muted">{v}</code>
+    </div>
+  ))}
+</div>
+
+<div className="mt-12 rounded-3xl border border-border/40 bg-surface p-8 text-center">
+  <div className="text-lg font-medium text-text-primary">
+    Ready to integrate?
+  </div>
+  <div className="mt-1 text-sm text-text-muted">
+    Install, set up tokens, and start shipping.
+  </div>
+  <div className="mt-4 flex justify-center gap-2">
+    <a
+      className="inline-flex items-center rounded-lg bg-brand px-5 py-3 text-on-brand"
+      href="?path=/docs/overview-installation--docs"
+    >
+      Installation
+    </a>
+    <a
+      className="inline-flex items-center rounded-lg bg-surface-muted px-5 py-3 text-text-primary"
+      href="?path=/docs/components-button--docs"
+    >
+      Explore components
+    </a>
+  </div>
+</div>
