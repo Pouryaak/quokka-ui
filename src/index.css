@@ -11,6 +11,14 @@
   --color-danger-muted: hsl(0, 72%, 96%);
   --color-danger-foreground: hsl(0, 0%, 100%);
 
+  --color-success: hsl(142, 70%, 45%);
+  --color-success-muted: hsl(142, 55%, 96%);
+  --color-info: hsl(219, 85%, 55%);
+  --color-info-muted: hsl(219, 60%, 96%);
+  --color-warning: hsl(38, 92%, 50%);
+  --color-warning-muted: hsl(38, 85%, 96%);
+  --color-toast-border: var(--color-border);
+
   --spacing-1: 0.25rem;
   --spacing-2: 0.5rem;
   --spacing-3: 0.75rem;
@@ -53,6 +61,13 @@
   --color-danger-hover: hsl(0, 72%, 65%);
   --color-danger-muted: hsl(0, 40%, 18%);
   --color-danger-foreground: hsl(0, 0%, 100%);
+
+  --color-success: hsl(142, 70%, 55%);
+  --color-success-muted: hsl(142, 30%, 18%);
+  --color-info: hsl(219, 85%, 62%);
+  --color-info-muted: hsl(219, 35%, 20%);
+  --color-warning: hsl(38, 92%, 60%);
+  --color-warning-muted: hsl(38, 35%, 20%);
 }
 
 @theme {
@@ -61,6 +76,10 @@
   --elevation-3: 0 20px 40px rgba(0, 0, 0, 0.18);
   --motion-duration-2: 180ms;
   --motion-ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --toast-gap: var(--spacing-3);
+  --toast-padding: var(--spacing-4);
+  --toast-width: 360px;
+  --z-toast: 1050;
 }
 
 @keyframes fade-in {
