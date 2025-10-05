@@ -6,6 +6,10 @@
   --color-text-primary: hsl(220, 10%, 20%);
   --color-text-muted: hsl(220, 8%, 45%);
   --color-border: hsl(220, 10%, 85%);
+  --color-danger: hsl(0, 72%, 51%);
+  --color-danger-hover: hsl(0, 72%, 45%);
+  --color-danger-muted: hsl(0, 72%, 96%);
+  --color-danger-foreground: hsl(0, 0%, 100%);
 
   --spacing-1: 0.25rem;
   --spacing-2: 0.5rem;
@@ -44,6 +48,69 @@
   --color-text-primary: hsl(220, 15%, 95%);
   --color-text-muted: hsl(220, 10%, 65%);
   --color-border: hsl(220, 10%, 30%);
+
+  --color-danger: hsl(0, 72%, 59%);
+  --color-danger-hover: hsl(0, 72%, 65%);
+  --color-danger-muted: hsl(0, 40%, 18%);
+  --color-danger-foreground: hsl(0, 0%, 100%);
+}
+
+@theme {
+  --overlay-bg: hsla(220, 10%, 5%, 0.5);
+  --z-overlay: 1000;
+  --elevation-3: 0 20px 40px rgba(0, 0, 0, 0.18);
+  --motion-duration-2: 180ms;
+  --motion-ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes zoom-out {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.97);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in var(--motion-duration-2) var(--motion-ease-standard);
+}
+.animate-fade-out {
+  animation: fade-out var(--motion-duration-2) var(--motion-ease-standard);
+}
+.animate-zoom-in {
+  animation: zoom-in var(--motion-duration-2) var(--motion-ease-standard);
+}
+.animate-zoom-out {
+  animation: zoom-out var(--motion-duration-2) var(--motion-ease-standard);
 }
 
 @import "tailwindcss";
