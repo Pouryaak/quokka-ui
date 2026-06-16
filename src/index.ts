@@ -7,3 +7,4 @@ export * from "./components/Spinner/Spinner";
 export * from "./components/Tabs/Tabs";
 export * from "./components/Textarea/Textarea";
 export * from "./components/Table/Table";
+export * from "./components/Label/Label";
