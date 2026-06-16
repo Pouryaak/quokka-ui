@@ -11,3 +11,4 @@ export * from "./components/Label/Label";
 export * from "./components/Badge/Badge";
 export * from "./components/Skeleton/Skeleton";
 export * from "./components/Switch/Switch";
+export * from "./components/RadioGroup/RadioGroup";
