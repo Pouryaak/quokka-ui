@@ -15,3 +15,4 @@ export * from "./components/RadioGroup/RadioGroup";
 export * from "./components/Tooltip/Tooltip";
 export * from "./components/Popover/Popover";
 export * from "./components/DropdownMenu/DropdownMenu";
+export * from "./components/Sheet/Sheet";
