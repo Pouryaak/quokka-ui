@@ -10,3 +10,4 @@ export * from "./components/Table/Table";
 export * from "./components/Label/Label";
 export * from "./components/Badge/Badge";
 export * from "./components/Skeleton/Skeleton";
+export * from "./components/Switch/Switch";
