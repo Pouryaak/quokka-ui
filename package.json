@@ -1,7 +1,7 @@
 {
   "name": "@poak-dev/quokka-ui",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
