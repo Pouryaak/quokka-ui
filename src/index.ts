@@ -22,3 +22,4 @@ export * from "./components/Slider/Slider";
 export * from "./components/Avatar/Avatar";
 export * from "./components/VisuallyHidden/VisuallyHidden";
 export * from "./components/Slot/Slot";
+export * from "./components/Accordion/Accordion";
