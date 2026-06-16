@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.2.0
+
+### Added
+
+- **Sheet** — Slide-in panel (drawer) built on Radix Dialog, with configurable side (top/right/bottom/left) and width (sm/md/lg/xl/full)
+- **Command** — Keyboard-driven command palette with search filtering, arrow key navigation, groups, and empty state
+- **Progress** — Progress bar built on Radix Progress, with value/indeterminate states and intent variants (brand/success/warning/danger/info)
+- **Slider** — Range slider built on Radix Slider, with single and multi-thumb support and sm/md/lg sizes
+- **Avatar** — Avatar built on Radix Avatar, with image + fallback support, circle/rounded variants, and sm/md/lg/xl sizes
+- **Accordion** — Expandable sections built on Radix Accordion, with single/multiple modes and default/bordered/ghost variants
+- **Breadcrumbs** — Breadcrumb navigation with auto `aria-current` on last item and customizable separators
+- **Pagination** — Page navigation with previous/next buttons, ellipsis for large page counts, and sm/md/lg sizes
+- **VisuallyHidden** — Re-export of Radix VisuallyHidden for accessible hidden content
+- **Slot** — Re-export of Radix Slot for polymorphic `asChild` composition
+
+### Changed
+
+- Added `ResizeObserver` polyfill to test setup for Slider component compatibility
+
 ## 1.1.0
 
 ### Added
