@@ -17,3 +17,8 @@ export * from "./components/Popover/Popover";
 export * from "./components/DropdownMenu/DropdownMenu";
 export * from "./components/Sheet/Sheet";
 export * from "./components/Command/Command";
+export * from "./components/Progress/Progress";
+export * from "./components/Slider/Slider";
+export * from "./components/Avatar/Avatar";
+export * from "./components/VisuallyHidden/VisuallyHidden";
+export * from "./components/Slot/Slot";
