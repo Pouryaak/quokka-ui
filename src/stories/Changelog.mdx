@@ -6,6 +6,52 @@ import { Meta } from "@storybook/addon-docs/blocks";
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2025-06-16
+
+### Added
+
+- **Sheet**: Slide-in panel (drawer) built on Radix Dialog. Supports four sides (top/right/bottom/left), five widths (sm/md/lg/xl/full), and includes Title, Description, Body, Footer layout slots.
+- **Command (Command Palette)**: Keyboard-driven command palette with search filtering, arrow key navigation, item groups, and empty state. Built on Radix Dialog with custom keyboard handling.
+- **Progress**: Progress bar built on Radix Progress. Supports value-based and indeterminate modes, three sizes (sm/md/lg), and five intents (brand/success/warning/danger/info).
+- **Slider**: Range slider built on Radix Slider. Supports single and multi-thumb configurations, three sizes (sm/md/lg), and full keyboard navigation.
+- **Avatar**: User avatar built on Radix Avatar. Shows image with automatic fallback initials, circle/rounded variants, and four sizes (sm/md/lg/xl).
+- **Accordion**: Expandable sections built on Radix Accordion. Supports single/multiple expansion modes, collapsible behavior, and default/bordered/ghost variants.
+- **Breadcrumbs**: Breadcrumb navigation with automatic `aria-current="page"` on the last item, customizable separators, and automatic styling for current vs. ancestor items.
+- **Pagination**: Page navigation with previous/next buttons, ellipsis for large page counts, three sizes (sm/md/lg), and full keyboard accessibility.
+- **VisuallyHidden**: Re-export of Radix VisuallyHidden for accessible screen-reader-only content.
+- **Slot**: Re-export of Radix Slot for polymorphic `asChild` component composition.
+
+### Testing
+
+- Added unit tests for all new components (Vitest + React Testing Library + vitest-axe).
+- Added `ResizeObserver` polyfill to test setup for Slider component compatibility.
+
+## [1.1.0] - 2025-06-16
+
+### Added
+
+- **Label**: Accessible form label built on Radix Label, with `required` indicator showing a danger-colored asterisk.
+- **Badge**: Non-interactive status badge with 3 variants (solid/outline/subtle) × 6 intents (neutral/brand/success/danger/warning/info).
+- **Skeleton**: Loading placeholder with text, circle, and rectangle shape variants and accessible `role="status"`.
+- **Switch**: Toggle switch built on Radix Switch, with optional inline label and sm/md/lg sizes.
+- **RadioGroup**: Radio button group built on Radix RadioGroup, with per-item labels, arrow key navigation, and sm/md/lg sizes.
+- **Tooltip**: Hover/focus tooltip built on Radix Tooltip, with configurable side/align, `TooltipProvider` for global delay control, and portal-based rendering.
+- **Popover**: Click-triggered popover panel built on Radix Popover, with built-in close button, Escape-to-dismiss, and focus management.
+- **DropdownMenu**: Full dropdown menu built on Radix DropdownMenu, with items, separators, labels, groups, and nested submenus.
+
+### Changed
+
+- **Button**: Replaced `disabled:pointer-events-none` with `disabled:cursor-not-allowed` to match library disabled standard.
+- **Tabs**: Replaced `disabled:pointer-events-none` with `disabled:cursor-not-allowed` to match library disabled standard.
+
+### Fixed
+
+- Added `cursor-pointer` to all interactive elements across Button, Select, Tabs, RadioGroup, Switch, Popover, DropdownMenu, AlertDialog, Modal, and Toast components for consistent hover feedback.
+
+### Testing
+
+- Added unit tests for all new components (Vitest + React Testing Library + vitest-axe).
+
 ## [1.0.2] - 2025-10-23
 
 ### Added
