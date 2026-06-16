@@ -16,3 +16,4 @@ export * from "./components/Tooltip/Tooltip";
 export * from "./components/Popover/Popover";
 export * from "./components/DropdownMenu/DropdownMenu";
 export * from "./components/Sheet/Sheet";
+export * from "./components/Command/Command";
