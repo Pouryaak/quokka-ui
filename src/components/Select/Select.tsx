@@ -12,6 +12,7 @@ import { cva, VariantProps } from "class-variance-authority";
 const selectTriggerStyles = cva(
   [
     "inline-flex w-full items-center justify-between rounded-md",
+    "cursor-pointer",
     "focus:outline-none focus-visible:ring-2 focus-visible:ring-brand",
     "disabled:cursor-not-allowed disabled:opacity-50",
     "text-text-primary",

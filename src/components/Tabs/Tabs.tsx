@@ -6,9 +6,9 @@ import { cva, VariantProps } from "class-variance-authority";
 const tabsTriggerStyles = cva(
   [
     "inline-flex items-center justify-center whitespace-nowrap font-medium",
-    "transition-colors",
+    "transition-colors cursor-pointer",
     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand",
-    "disabled:pointer-events-none disabled:opacity-50",
+    "disabled:cursor-not-allowed disabled:opacity-50",
     "data-[state=inactive]:text-text-muted",
     "gap-1.5",
   ].join(" "),

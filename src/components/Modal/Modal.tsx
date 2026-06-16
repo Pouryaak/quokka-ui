@@ -177,7 +177,7 @@ const ModalClose = React.forwardRef<HTMLButtonElement, ModalCloseProps>(
       <RadixDialog.Close
         ref={ref}
         className={cn(
-          "absolute right-[var(--spacing-4)] top-[var(--spacing-4)] inline-flex items-center justify-center rounded-[var(--radius-full)] p-[var(--spacing-2)] text-[var(--color-text-muted)] hover:bg-[var(--color-surface-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]",
+          "absolute right-[var(--spacing-4)] top-[var(--spacing-4)] inline-flex items-center justify-center rounded-[var(--radius-full)] p-[var(--spacing-2)] text-[var(--color-text-muted)] hover:bg-[var(--color-surface-muted)] cursor-pointer focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]",
           className
         )}
         {...props}

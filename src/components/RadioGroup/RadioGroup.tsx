@@ -6,7 +6,7 @@ import * as RadixRadioGroup from "@radix-ui/react-radio-group";
 const radioItemStyles = cva(
   [
     "aspect-square rounded-full border-2 shrink-0",
-    "flex items-center justify-center",
+    "flex items-center justify-center cursor-pointer",
     "transition-colors",
     "border-border bg-surface",
     "hover:border-brand/60",

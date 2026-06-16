@@ -24,7 +24,7 @@ const PopoverTrigger = React.forwardRef<
   <RadixPopover.Trigger
     ref={ref}
     className={twMerge(
-      "inline-flex items-center justify-center",
+      "inline-flex items-center justify-center cursor-pointer",
       className
     )}
     {...props}
@@ -71,7 +71,7 @@ const PopoverClose = React.forwardRef<
   <RadixPopover.Close
     ref={ref}
     className={twMerge(
-      "absolute right-3 top-3 rounded-sm p-1 text-text-muted hover:text-text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2",
+      "absolute right-3 top-3 rounded-sm p-1 text-text-muted hover:text-text-primary transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2",
       className
     )}
     {...props}

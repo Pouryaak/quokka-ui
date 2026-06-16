@@ -24,7 +24,7 @@ const DropdownMenuTrigger = React.forwardRef<
   <RadixDropdownMenu.Trigger
     ref={ref}
     className={twMerge(
-      "inline-flex items-center justify-center",
+      "inline-flex items-center justify-center cursor-pointer",
       className
     )}
     {...props}

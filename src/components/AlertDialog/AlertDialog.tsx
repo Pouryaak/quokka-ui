@@ -129,7 +129,8 @@ AlertDialog.Cancel = React.forwardRef<
       ref={ref}
       className={cn(
         "inline-flex items-center justify-center rounded-[var(--radius-md)] px-[var(--spacing-4)] py-[var(--spacing-2)]",
-        "font-[var(--font-weight-medium)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]",
+        "font-[var(--font-weight-medium)] cursor-pointer",
+        "focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]",
         "bg-[var(--color-surface-muted)] hover:opacity-90 text-[var(--color-text-primary)]",
         "disabled:opacity-50 disabled:cursor-not-allowed",
         className
@@ -152,7 +153,8 @@ AlertDialog.Action = React.forwardRef<HTMLButtonElement, ActionProps>(
         ref={ref}
         className={cn(
           "inline-flex items-center justify-center rounded-[var(--radius-md)] px-[var(--spacing-4)] py-[var(--spacing-2)]",
-          "font-[var(--font-weight-medium)] focus:outline-none focus:ring-2",
+          "font-[var(--font-weight-medium)] cursor-pointer",
+          "focus:outline-none focus:ring-2",
           "disabled:opacity-50 disabled:cursor-not-allowed",
           toneToUse === "danger"
             ? [

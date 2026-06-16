@@ -384,7 +384,7 @@ export const ToastCard = ({
           <RadixToast.Action altText={action.label} asChild>
             <button
               onClick={action.onClick}
-              className="mt-2 inline-flex items-center rounded-[var(--radius-md)] border border-[var(--color-border)] px-2 py-1 text-[var(--font-size-sm)] hover:bg-[var(--color-surface-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]"
+              className="mt-2 inline-flex cursor-pointer items-center rounded-[var(--radius-md)] border border-[var(--color-border)] px-2 py-1 text-[var(--font-size-sm)] hover:bg-[var(--color-surface-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]"
             >
               {action.label}
             </button>
@@ -393,7 +393,7 @@ export const ToastCard = ({
       </div>
 
       <RadixToast.Close
-        className="ml-auto inline-flex h-6 w-6 items-center justify-center rounded-[var(--radius-full)] text-[var(--color-text-muted)] hover:bg-[var(--color-surface-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]"
+        className="ml-auto inline-flex h-6 w-6 cursor-pointer items-center justify-center rounded-[var(--radius-full)] text-[var(--color-text-muted)] hover:bg-[var(--color-surface-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand)]"
         aria-label="Close"
       >
         ✕
