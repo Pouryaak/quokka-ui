@@ -23,3 +23,5 @@ export * from "./components/Avatar/Avatar";
 export * from "./components/VisuallyHidden/VisuallyHidden";
 export * from "./components/Slot/Slot";
 export * from "./components/Accordion/Accordion";
+export * from "./components/Breadcrumbs/Breadcrumbs";
+export * from "./components/Pagination/Pagination";
