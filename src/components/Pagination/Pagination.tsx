@@ -28,7 +28,7 @@ const pageButtonStyles = cva(
   }
 );
 
-export type PaginationProps = React.HTMLAttributes<HTMLElement> & {
+export type PaginationProps = Omit<React.HTMLAttributes<HTMLElement>, "onChange"> & {
   total: number;
   page: number;
   onChange: (page: number) => void;
@@ -67,7 +67,7 @@ export const Pagination = React.forwardRef<HTMLElement, PaginationProps>(
 
     return (
       <nav ref={ref} role="navigation" aria-label="Pagination" className={className} {...props}>
-        <ul className="flex items-center gap-1">
+        <ul className="flex items-center gap-1 list-none p-0">
           <li>
             <button
               className={twMerge(pageButtonStyles({ size }), "px-2 w-auto")}

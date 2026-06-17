@@ -1,0 +1,258 @@
+- generic [ref=e3]:
+  - navigation "Global" [ref=e6]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - link "Skip to canvas" [ref=e12] [cursor=pointer]:
+            - /url: "#storybook-preview-wrapper"
+          - link "Quokka UI" [ref=e14] [cursor=pointer]:
+            - /url: https://pouryaak.github.io/quokka-ui
+            - img "Quokka UI" [ref=e15]
+          - button "Shortcuts" [ref=e17] [cursor=pointer]:
+            - img [ref=e18]
+        - generic [ref=e21]: Search for components
+        - generic [ref=e22]:
+          - combobox "Search for components" [ref=e23]:
+            - generic:
+              - img
+            - searchbox "Search for components" [ref=e24]
+            - code:
+              - generic: ⌘
+              - text: K
+            - button "Tag filters" [ref=e74] [cursor=pointer]:
+              - img [ref=e75]
+          - button "Create a new story" [ref=e26] [cursor=pointer]:
+            - img [ref=e27]
+        - generic [ref=e29]:
+          - generic [ref=e77]:
+            - img
+            - generic [ref=e78]:
+              - button "Introduction" [expanded] [ref=e79] [cursor=pointer]:
+                - img [ref=e81]
+                - text: Introduction
+              - button "Collapse" [ref=e83] [cursor=pointer]:
+                - img [ref=e84]
+            - generic [ref=e86]:
+              - link "Welcome" [ref=e87] [cursor=pointer]:
+                - /url: /?path=/docs/introduction-welcome--docs
+                - img [ref=e89]
+                - text: Welcome
+              - link "Skip to canvas" [ref=e91] [cursor=pointer]:
+                - /url: "#storybook-preview-wrapper"
+            - link "Installation" [ref=e93] [cursor=pointer]:
+              - /url: /?path=/docs/introduction-installation--docs
+              - img [ref=e95]
+              - text: Installation
+            - link "Changelog" [ref=e98] [cursor=pointer]:
+              - /url: /?path=/docs/introduction-changelog--docs
+              - img [ref=e100]
+              - text: Changelog
+            - generic [ref=e102]:
+              - button "Components" [expanded] [ref=e103] [cursor=pointer]:
+                - img [ref=e105]
+                - text: Components
+              - button "Collapse" [ref=e107] [cursor=pointer]:
+                - img [ref=e108]
+            - button "Button" [ref=e111] [cursor=pointer]:
+              - generic [ref=e112]:
+                - img [ref=e114]
+                - img [ref=e116]
+              - text: Button
+            - button "Card" [ref=e119] [cursor=pointer]:
+              - generic [ref=e120]:
+                - img [ref=e122]
+                - img [ref=e124]
+              - text: Card
+            - button "Checkbox" [ref=e127] [cursor=pointer]:
+              - generic [ref=e128]:
+                - img [ref=e130]
+                - img [ref=e132]
+              - text: Checkbox
+            - button "Input" [ref=e135] [cursor=pointer]:
+              - generic [ref=e136]:
+                - img [ref=e138]
+                - img [ref=e140]
+              - text: Input
+            - button "Select" [ref=e143] [cursor=pointer]:
+              - generic [ref=e144]:
+                - img [ref=e146]
+                - img [ref=e148]
+              - text: Select
+            - button "Table" [ref=e151] [cursor=pointer]:
+              - generic [ref=e152]:
+                - img [ref=e154]
+                - img [ref=e156]
+              - text: Table
+            - button "Tabs" [ref=e159] [cursor=pointer]:
+              - generic [ref=e160]:
+                - img [ref=e162]
+                - img [ref=e164]
+              - text: Tabs
+            - button "Textarea" [ref=e167] [cursor=pointer]:
+              - generic [ref=e168]:
+                - img [ref=e170]
+                - img [ref=e172]
+              - text: Textarea
+            - button "Accordion" [ref=e175] [cursor=pointer]:
+              - generic [ref=e176]:
+                - img [ref=e178]
+                - img [ref=e180]
+              - text: Accordion
+            - button "Avatar" [ref=e183] [cursor=pointer]:
+              - generic [ref=e184]:
+                - img [ref=e186]
+                - img [ref=e188]
+              - text: Avatar
+            - button "Badge" [ref=e191] [cursor=pointer]:
+              - generic [ref=e192]:
+                - img [ref=e194]
+                - img [ref=e196]
+              - text: Badge
+            - button "Breadcrumbs" [ref=e199] [cursor=pointer]:
+              - generic [ref=e200]:
+                - img [ref=e202]
+                - img [ref=e204]
+              - text: Breadcrumbs
+            - button "Command" [ref=e207] [cursor=pointer]:
+              - generic [ref=e208]:
+                - img [ref=e210]
+                - img [ref=e212]
+              - text: Command
+            - button "DropdownMenu" [ref=e215] [cursor=pointer]:
+              - generic [ref=e216]:
+                - img [ref=e218]
+                - img [ref=e220]
+              - text: DropdownMenu
+            - button "Label" [ref=e223] [cursor=pointer]:
+              - generic [ref=e224]:
+                - img [ref=e226]
+                - img [ref=e228]
+              - text: Label
+            - button "Pagination" [ref=e231] [cursor=pointer]:
+              - generic [ref=e232]:
+                - img [ref=e234]
+                - img [ref=e236]
+              - text: Pagination
+            - button "Popover" [ref=e239] [cursor=pointer]:
+              - generic [ref=e240]:
+                - img [ref=e242]
+                - img [ref=e244]
+              - text: Popover
+            - button "Progress" [ref=e247] [cursor=pointer]:
+              - generic [ref=e248]:
+                - img [ref=e250]
+                - img [ref=e252]
+              - text: Progress
+            - button "RadioGroup" [ref=e255] [cursor=pointer]:
+              - generic [ref=e256]:
+                - img [ref=e258]
+                - img [ref=e260]
+              - text: RadioGroup
+            - button "Sheet" [ref=e263] [cursor=pointer]:
+              - generic [ref=e264]:
+                - img [ref=e266]
+                - img [ref=e268]
+              - text: Sheet
+            - button "Skeleton" [ref=e271] [cursor=pointer]:
+              - generic [ref=e272]:
+                - img [ref=e274]
+                - img [ref=e276]
+              - text: Skeleton
+            - button "Slider" [ref=e279] [cursor=pointer]:
+              - generic [ref=e280]:
+                - img [ref=e282]
+                - img [ref=e284]
+              - text: Slider
+            - button "Switch" [ref=e287] [cursor=pointer]:
+              - generic [ref=e288]:
+                - img [ref=e290]
+                - img [ref=e292]
+              - text: Switch
+            - button "Tooltip" [ref=e295] [cursor=pointer]:
+              - generic [ref=e296]:
+                - img [ref=e298]
+                - img [ref=e300]
+              - text: Tooltip
+            - generic [ref=e302]:
+              - button "Feedback" [expanded] [ref=e303] [cursor=pointer]:
+                - img [ref=e305]
+                - text: Feedback
+              - button "Collapse" [ref=e307] [cursor=pointer]:
+                - img [ref=e308]
+            - button "Spinner" [ref=e311] [cursor=pointer]:
+              - generic [ref=e312]:
+                - img [ref=e314]
+                - img [ref=e316]
+              - text: Spinner
+            - button "Toast" [ref=e319] [cursor=pointer]:
+              - generic [ref=e320]:
+                - img [ref=e322]
+                - img [ref=e324]
+              - text: Toast
+            - generic [ref=e326]:
+              - button "Overlay" [expanded] [ref=e327] [cursor=pointer]:
+                - img [ref=e329]
+                - text: Overlay
+              - button "Collapse" [ref=e331] [cursor=pointer]:
+                - img [ref=e332]
+            - button "AlertDialog" [ref=e335] [cursor=pointer]:
+              - generic [ref=e336]:
+                - img [ref=e338]
+                - img [ref=e340]
+              - text: AlertDialog
+            - button "Modal" [ref=e343] [cursor=pointer]:
+              - generic [ref=e344]:
+                - img [ref=e346]
+                - img [ref=e348]
+              - text: Modal
+          - text: /
+      - link "Storybook 10.4 Learn what's new in Storybook" [ref=e352] [cursor=pointer]:
+        - /url: /?path=/settings/whats-new
+        - img [ref=e354]
+        - generic [ref=e356]:
+          - generic "Storybook 10.4" [ref=e357]
+          - generic [ref=e358]: Learn what's new in Storybook
+        - button "Dismiss notification" [ref=e359]:
+          - img [ref=e360]
+  - main [ref=e52]:
+    - region "Toolbar" [ref=e53]:
+      - generic [ref=e54]: Toolbar
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - button "Apply outlines to the preview" [ref=e57] [cursor=pointer]:
+            - img [ref=e58]
+          - button "light theme" [ref=e362] [cursor=pointer]:
+            - img [ref=e363]
+            - generic [ref=e365]: light theme
+        - button "Go full screen" [ref=e61] [cursor=pointer]:
+          - img [ref=e62]
+    - generic [ref=e68]:
+      - link "Skip to sidebar" [ref=e69] [cursor=pointer]:
+        - /url: "#introduction-welcome--docs"
+      - iframe [ref=e70]:
+        - generic [ref=f1e3]:
+          - 'heading "Failed to fetch dynamically imported module: http://localhost:6006/src/stories/Introduction.mdx" [level=1] [ref=f1e4]'
+          - paragraph [ref=f1e5]: "The component failed to render properly, likely due to a configuration issue in Storybook. Here are some common causes and how you can address them:"
+          - list [ref=f1e6]:
+            - listitem [ref=f1e7]:
+              - strong [ref=f1e8]: Missing Context/Providers
+              - text: ": You can use decorators to supply specific contexts or providers, which are sometimes necessary for components to render correctly. For detailed instructions on using decorators, please visit the"
+              - link "Decorators documentation" [ref=f1e9] [cursor=pointer]:
+                - /url: https://storybook.js.org/docs/writing-stories/decorators
+              - text: .
+            - listitem [ref=f1e10]:
+              - strong [ref=f1e11]: Misconfigured Webpack or Vite
+              - text: ": Verify that Storybook picks up all necessary settings for loaders, plugins, and other relevant parameters. You can find step-by-step guides for configuring"
+              - link "Webpack" [ref=f1e12] [cursor=pointer]:
+                - /url: https://storybook.js.org/docs/builders/webpack
+              - text: or
+              - link "Vite" [ref=f1e13] [cursor=pointer]:
+                - /url: https://storybook.js.org/docs/builders/vite
+              - text: with Storybook.
+            - listitem [ref=f1e14]:
+              - strong [ref=f1e15]: Missing Environment Variables
+              - text: ": Your Storybook may require specific environment variables to function as intended. You can set up custom environment variables as outlined in the"
+              - link "Environment Variables documentation" [ref=f1e16] [cursor=pointer]:
+                - /url: https://storybook.js.org/docs/configure/environment-variables
+              - text: .
+          - code [ref=f1e18]: "TypeError: Failed to fetch dynamically imported module: http://localhost:6006/src/stories/Introduction.mdx"

@@ -1,0 +1,222 @@
+- generic [ref=e3]:
+  - navigation "Global" [ref=e6]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - link "Skip to canvas" [ref=e12] [cursor=pointer]:
+          - /url: "#storybook-preview-wrapper"
+        - link "Quokka UI" [ref=e14] [cursor=pointer]:
+          - /url: https://pouryaak.github.io/quokka-ui
+          - img "Quokka UI"
+        - button "Shortcuts" [ref=e16] [cursor=pointer]:
+          - img [ref=e17]
+      - generic [ref=e20]: Search for components
+      - generic [ref=e21]:
+        - combobox "Search for components" [ref=e22]:
+          - generic:
+            - img
+          - searchbox "Search for components" [ref=e23]
+          - code:
+            - generic: ⌘
+            - text: K
+          - button "Tag filters" [ref=e27] [cursor=pointer]:
+            - img [ref=e28]
+        - button "Create a new story" [ref=e31] [cursor=pointer]:
+          - img [ref=e32]
+      - generic [ref=e34]:
+        - generic [ref=e38]:
+          - img
+          - generic [ref=e39]:
+            - button "Introduction" [expanded] [ref=e40] [cursor=pointer]:
+              - img [ref=e42]
+              - text: Introduction
+            - button "Collapse" [ref=e44] [cursor=pointer]:
+              - img [ref=e45]
+          - generic [ref=e47]:
+            - link "Welcome" [ref=e48] [cursor=pointer]:
+              - /url: /?path=/docs/introduction-welcome--docs
+              - img [ref=e50]
+              - text: Welcome
+            - link "Skip to canvas" [ref=e52] [cursor=pointer]:
+              - /url: "#storybook-preview-wrapper"
+          - link "Installation" [ref=e54] [cursor=pointer]:
+            - /url: /?path=/docs/introduction-installation--docs
+            - img [ref=e56]
+            - text: Installation
+          - link "Changelog" [ref=e59] [cursor=pointer]:
+            - /url: /?path=/docs/introduction-changelog--docs
+            - img [ref=e61]
+            - text: Changelog
+          - generic [ref=e63]:
+            - button "Components" [expanded] [ref=e64] [cursor=pointer]:
+              - img [ref=e66]
+              - text: Components
+            - button "Collapse" [ref=e68] [cursor=pointer]:
+              - img [ref=e69]
+          - button "Button" [ref=e72] [cursor=pointer]:
+            - generic [ref=e73]:
+              - img [ref=e75]
+              - img [ref=e77]
+            - text: Button
+          - button "Card" [ref=e80] [cursor=pointer]:
+            - generic [ref=e81]:
+              - img [ref=e83]
+              - img [ref=e85]
+            - text: Card
+          - button "Checkbox" [ref=e88] [cursor=pointer]:
+            - generic [ref=e89]:
+              - img [ref=e91]
+              - img [ref=e93]
+            - text: Checkbox
+          - button "Input" [ref=e96] [cursor=pointer]:
+            - generic [ref=e97]:
+              - img [ref=e99]
+              - img [ref=e101]
+            - text: Input
+          - button "Select" [ref=e104] [cursor=pointer]:
+            - generic [ref=e105]:
+              - img [ref=e107]
+              - img [ref=e109]
+            - text: Select
+          - button "Table" [ref=e112] [cursor=pointer]:
+            - generic [ref=e113]:
+              - img [ref=e115]
+              - img [ref=e117]
+            - text: Table
+          - button "Tabs" [ref=e120] [cursor=pointer]:
+            - generic [ref=e121]:
+              - img [ref=e123]
+              - img [ref=e125]
+            - text: Tabs
+          - button "Textarea" [ref=e128] [cursor=pointer]:
+            - generic [ref=e129]:
+              - img [ref=e131]
+              - img [ref=e133]
+            - text: Textarea
+          - button "Accordion" [ref=e136] [cursor=pointer]:
+            - generic [ref=e137]:
+              - img [ref=e139]
+              - img [ref=e141]
+            - text: Accordion
+          - button "Avatar" [ref=e144] [cursor=pointer]:
+            - generic [ref=e145]:
+              - img [ref=e147]
+              - img [ref=e149]
+            - text: Avatar
+          - button "Badge" [ref=e152] [cursor=pointer]:
+            - generic [ref=e153]:
+              - img [ref=e155]
+              - img [ref=e157]
+            - text: Badge
+          - button "Breadcrumbs" [ref=e160] [cursor=pointer]:
+            - generic [ref=e161]:
+              - img [ref=e163]
+              - img [ref=e165]
+            - text: Breadcrumbs
+          - button "Command" [ref=e168] [cursor=pointer]:
+            - generic [ref=e169]:
+              - img [ref=e171]
+              - img [ref=e173]
+            - text: Command
+          - button "DropdownMenu" [ref=e176] [cursor=pointer]:
+            - generic [ref=e177]:
+              - img [ref=e179]
+              - img [ref=e181]
+            - text: DropdownMenu
+          - button "Label" [ref=e184] [cursor=pointer]:
+            - generic [ref=e185]:
+              - img [ref=e187]
+              - img [ref=e189]
+            - text: Label
+          - button "Pagination" [ref=e192] [cursor=pointer]:
+            - generic [ref=e193]:
+              - img [ref=e195]
+              - img [ref=e197]
+            - text: Pagination
+          - button "Popover" [ref=e200] [cursor=pointer]:
+            - generic [ref=e201]:
+              - img [ref=e203]
+              - img [ref=e205]
+            - text: Popover
+          - button "Progress" [ref=e208] [cursor=pointer]:
+            - generic [ref=e209]:
+              - img [ref=e211]
+              - img [ref=e213]
+            - text: Progress
+          - button "RadioGroup" [ref=e216] [cursor=pointer]:
+            - generic [ref=e217]:
+              - img [ref=e219]
+              - img [ref=e221]
+            - text: RadioGroup
+          - button "Sheet" [ref=e224] [cursor=pointer]:
+            - generic [ref=e225]:
+              - img [ref=e227]
+              - img [ref=e229]
+            - text: Sheet
+          - button "Skeleton" [ref=e232] [cursor=pointer]:
+            - generic [ref=e233]:
+              - img [ref=e235]
+              - img [ref=e237]
+            - text: Skeleton
+          - button "Slider" [ref=e240] [cursor=pointer]:
+            - generic [ref=e241]:
+              - img [ref=e243]
+              - img [ref=e245]
+            - text: Slider
+          - button "Switch" [ref=e248] [cursor=pointer]:
+            - generic [ref=e249]:
+              - img [ref=e251]
+              - img [ref=e253]
+            - text: Switch
+          - button "Tooltip" [ref=e256] [cursor=pointer]:
+            - generic [ref=e257]:
+              - img [ref=e259]
+              - img [ref=e261]
+            - text: Tooltip
+          - generic [ref=e263]:
+            - button "Feedback" [expanded] [ref=e264] [cursor=pointer]:
+              - img [ref=e266]
+              - text: Feedback
+            - button "Collapse" [ref=e268] [cursor=pointer]:
+              - img [ref=e269]
+          - button "Spinner" [ref=e272] [cursor=pointer]:
+            - generic [ref=e273]:
+              - img [ref=e275]
+              - img [ref=e277]
+            - text: Spinner
+          - button "Toast" [ref=e280] [cursor=pointer]:
+            - generic [ref=e281]:
+              - img [ref=e283]
+              - img [ref=e285]
+            - text: Toast
+          - generic [ref=e287]:
+            - button "Overlay" [expanded] [ref=e288] [cursor=pointer]:
+              - img [ref=e290]
+              - text: Overlay
+            - button "Collapse" [ref=e292] [cursor=pointer]:
+              - img [ref=e293]
+          - button "AlertDialog" [ref=e296] [cursor=pointer]:
+            - generic [ref=e297]:
+              - img [ref=e299]
+              - img [ref=e301]
+            - text: AlertDialog
+          - button "Modal" [ref=e304] [cursor=pointer]:
+            - generic [ref=e305]:
+              - img [ref=e307]
+              - img [ref=e309]
+            - text: Modal
+        - text: / / / /
+  - main [ref=e312]:
+    - region "Toolbar" [ref=e313]:
+      - generic [ref=e314]: Toolbar
+      - generic [ref=e315]:
+        - button "Apply outlines to the preview" [ref=e317] [cursor=pointer]:
+          - img [ref=e318]
+        - button "Go full screen" [ref=e321] [cursor=pointer]:
+          - img [ref=e322]
+    - generic [ref=e325]:
+      - progressbar "Content is loading..." [ref=e327]
+      - generic [ref=e328]:
+        - link "Skip to sidebar" [ref=e329] [cursor=pointer]:
+          - /url: "#introduction-welcome--docs"
+        - iframe [ref=e330]:
+          

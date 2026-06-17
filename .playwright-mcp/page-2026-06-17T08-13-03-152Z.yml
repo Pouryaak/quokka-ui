@@ -1,0 +1,37 @@
+- generic [ref=e3]:
+  - navigation "Global" [ref=e6]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - link "Skip to canvas" [ref=e12] [cursor=pointer]:
+          - /url: "#storybook-preview-wrapper"
+        - link "Quokka UI" [ref=e14] [cursor=pointer]:
+          - /url: https://pouryaak.github.io/quokka-ui
+          - img "Quokka UI" [ref=e15]
+        - button "Shortcuts" [ref=e17] [cursor=pointer]:
+          - img [ref=e18]
+      - generic [ref=e21]: Search for components
+      - generic [ref=e22]:
+        - combobox "Search for components" [ref=e23]:
+          - generic:
+            - img
+          - searchbox "Search for components" [ref=e24]
+          - code:
+            - generic: ⌘
+            - text: K
+        - button "Create a new story" [ref=e26] [cursor=pointer]:
+          - img [ref=e27]
+  - main [ref=e52]:
+    - region "Toolbar" [ref=e53]:
+      - generic [ref=e54]: Toolbar
+      - generic [ref=e55]:
+        - button "Apply outlines to the preview" [ref=e57] [cursor=pointer]:
+          - img [ref=e58]
+        - button "Go full screen" [ref=e61] [cursor=pointer]:
+          - img [ref=e62]
+    - generic [ref=e65]:
+      - progressbar "Content is loading..." [ref=e67]
+      - generic [ref=e68]:
+        - link "Skip to sidebar" [ref=e69] [cursor=pointer]:
+          - /url: "#introduction-welcome--docs"
+        - iframe [ref=e70]:
+          

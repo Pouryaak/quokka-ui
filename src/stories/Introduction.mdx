@@ -7,6 +7,8 @@ import { Checkbox } from "../components/Checkbox/Checkbox";
 import { Select } from "../components/Select/Select";
 import { Tabs } from "../components/Tabs/Tabs";
 import { FinalTable } from "../components/table/Table";
+import { Badge } from "../components/Badge/Badge";
+import { Avatar } from "../components/Avatar/Avatar";
 
 <Meta title="Introduction/Welcome" />
 
@@ -154,57 +156,215 @@ import { FinalTable } from "../components/table/Table";
   </div>
 </section>
 
-<h2 className="mt-12 text-xl font-semibold text-text-primary">
-  Live data view
-</h2>
-<div className="rounded-2xl border border-border/40 bg-surface p-4">
-  <FinalTable frame="framed" className="w-full">
+<h2 className="mt-16 text-xl font-semibold text-text-primary">Live data view</h2>
+<p className="m-0 mt-1 mb-4 text-sm text-text-muted">Rich data table with Avatars, Badges, and status indicators — built with <code className="rounded bg-surface-muted px-1 py-0.5 text-xs">Table</code>, <code className="rounded bg-surface-muted px-1 py-0.5 text-xs">Avatar</code>, and <code className="rounded bg-surface-muted px-1 py-0.5 text-xs">Badge</code>.</p>
+
+<div className="rounded-2xl border border-border/40 bg-surface overflow-hidden">
+  <FinalTable frame="plain" className="w-full">
     <FinalTable.Header>
-      <FinalTable.Row density="compact">
-        <FinalTable.Head density="compact">Name</FinalTable.Head>
-        <FinalTable.Head density="compact">Role</FinalTable.Head>
-        <FinalTable.Head density="compact">Location</FinalTable.Head>
+      <FinalTable.Row density="default">
+        <FinalTable.Head density="default">Name</FinalTable.Head>
+        <FinalTable.Head density="default">Role</FinalTable.Head>
+        <FinalTable.Head density="default">Status</FinalTable.Head>
       </FinalTable.Row>
     </FinalTable.Header>
     <FinalTable.Body>
-      <FinalTable.Row density="compact">
-        <FinalTable.Cell density="compact">Ana</FinalTable.Cell>
-        <FinalTable.Cell density="compact">Engineer</FinalTable.Cell>
-        <FinalTable.Cell density="compact">Lisbon</FinalTable.Cell>
+      <FinalTable.Row density="default">
+        <FinalTable.Cell density="default">
+          <div className="flex items-center gap-3">
+            <Avatar fallback="LW" size="sm" />
+            <div>
+              <div className="text-sm font-medium text-text-primary">Lindsay Walton</div>
+              <div className="text-xs text-text-muted">lindsay@example.com</div>
+            </div>
+          </div>
+        </FinalTable.Cell>
+        <FinalTable.Cell density="default"><Badge intent="brand" variant="subtle" size="sm">Admin</Badge></FinalTable.Cell>
+        <FinalTable.Cell density="default">
+          <div className="flex items-center gap-2">
+            <span className="h-2 w-2 rounded-full bg-success" />
+            <span className="text-sm text-text-primary">Active</span>
+          </div>
+        </FinalTable.Cell>
       </FinalTable.Row>
-      <FinalTable.Row density="compact">
-        <FinalTable.Cell density="compact">Bao</FinalTable.Cell>
-        <FinalTable.Cell density="compact">Designer</FinalTable.Cell>
-        <FinalTable.Cell density="compact">Sydney</FinalTable.Cell>
+      <FinalTable.Row density="default">
+        <FinalTable.Cell density="default">
+          <div className="flex items-center gap-3">
+            <Avatar fallback="CH" size="sm" />
+            <div>
+              <div className="text-sm font-medium text-text-primary">Courtney Henry</div>
+              <div className="text-xs text-text-muted">courtney@example.com</div>
+            </div>
+          </div>
+        </FinalTable.Cell>
+        <FinalTable.Cell density="default"><Badge intent="info" variant="subtle" size="sm">Editor</Badge></FinalTable.Cell>
+        <FinalTable.Cell density="default">
+          <div className="flex items-center gap-2">
+            <span className="h-2 w-2 rounded-full bg-success" />
+            <span className="text-sm text-text-primary">Active</span>
+          </div>
+        </FinalTable.Cell>
       </FinalTable.Row>
-      <FinalTable.Row density="compact">
-        <FinalTable.Cell density="compact">Chris</FinalTable.Cell>
-        <FinalTable.Cell density="compact">PM</FinalTable.Cell>
-        <FinalTable.Cell density="compact">NYC</FinalTable.Cell>
+      <FinalTable.Row density="default">
+        <FinalTable.Cell density="default">
+          <div className="flex items-center gap-3">
+            <Avatar fallback="TC" size="sm" />
+            <div>
+              <div className="text-sm font-medium text-text-primary">Tom Cook</div>
+              <div className="text-xs text-text-muted">tom@example.com</div>
+            </div>
+          </div>
+        </FinalTable.Cell>
+        <FinalTable.Cell density="default"><Badge intent="neutral" variant="subtle" size="sm">Viewer</Badge></FinalTable.Cell>
+        <FinalTable.Cell density="default">
+          <div className="flex items-center gap-2">
+            <span className="h-2 w-2 rounded-full bg-border" />
+            <span className="text-sm text-text-primary">Inactive</span>
+          </div>
+        </FinalTable.Cell>
+      </FinalTable.Row>
+      <FinalTable.Row density="default">
+        <FinalTable.Cell density="default">
+          <div className="flex items-center gap-3">
+            <Avatar fallback="WF" size="sm" />
+            <div>
+              <div className="text-sm font-medium text-text-primary">Whitney Francis</div>
+              <div className="text-xs text-text-muted">whitney@example.com</div>
+            </div>
+          </div>
+        </FinalTable.Cell>
+        <FinalTable.Cell density="default"><Badge intent="info" variant="subtle" size="sm">Editor</Badge></FinalTable.Cell>
+        <FinalTable.Cell density="default">
+          <div className="flex items-center gap-2">
+            <span className="h-2 w-2 rounded-full bg-success" />
+            <span className="text-sm text-text-primary">Active</span>
+          </div>
+        </FinalTable.Cell>
+      </FinalTable.Row>
+      <FinalTable.Row density="default">
+        <FinalTable.Cell density="default">
+          <div className="flex items-center gap-3">
+            <Avatar fallback="LK" size="sm" />
+            <div>
+              <div className="text-sm font-medium text-text-primary">Leonard Krasner</div>
+              <div className="text-xs text-text-muted">leonard@example.com</div>
+            </div>
+          </div>
+        </FinalTable.Cell>
+        <FinalTable.Cell density="default"><Badge intent="brand" variant="subtle" size="sm">Admin</Badge></FinalTable.Cell>
+        <FinalTable.Cell density="default">
+          <div className="flex items-center gap-2">
+            <span className="h-2 w-2 rounded-full bg-success" />
+            <span className="text-sm text-text-primary">Active</span>
+          </div>
+        </FinalTable.Cell>
       </FinalTable.Row>
     </FinalTable.Body>
   </FinalTable>
 </div>
 
-<h2 className="mt-12 text-xl font-semibold text-text-primary">Theme tokens</h2>
-<p className="m-0 mb-3 text-sm text-text-muted">
-  Switch themes from the toolbar to see these update.
-</p>
-<div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-  {[
-    ["--color-brand", "Brand"],
-    ["--color-surface", "Surface"],
-    ["--color-surface-muted", "Surface muted"],
-    ["--color-text-primary", "Text primary"],
-    ["--color-text-muted", "Text muted"],
-    ["--color-border", "Border"],
-  ].map(([v, l]) => (
-    <div key={v} className="rounded-xl border border-border/40 bg-surface p-3">
-      <div className="h-12 rounded-md" style={{ background: `var(${v})` }} />
-      <div className="mt-2 text-xs text-text-muted">{l}</div>
-      <code className="text-[11px] text-text-muted">{v}</code>
+{/* ─── THEME TOKENS ─── */}
+<h2 className="mt-16 text-xl font-semibold text-text-primary">Theme tokens</h2>
+<p className="m-0 mt-1 mb-2 text-sm text-text-muted">All styling flows through CSS custom properties. Switch between light and dark mode to see tokens update live.</p>
+
+<div className="mt-8 grid gap-6 sm:grid-cols-2">
+  <div className="rounded-2xl border border-border/40 bg-surface p-6 space-y-5">
+    <h3 className="m-0 text-sm font-medium text-text-muted uppercase tracking-wider">Core colors</h3>
+    <div className="space-y-3">
+      {[
+        { token: "--color-brand", label: "Brand", cssVar: "var(--color-brand)" },
+        { token: "--color-surface", label: "Surface", cssVar: "var(--color-surface)" },
+        { token: "--color-surface-muted", label: "Surface muted", cssVar: "var(--color-surface-muted)" },
+        { token: "--color-text-primary", label: "Text primary", cssVar: "var(--color-text-primary)" },
+        { token: "--color-text-muted", label: "Text muted", cssVar: "var(--color-text-muted)" },
+        { token: "--color-border", label: "Border", cssVar: "var(--color-border)" },
+      ].map((t) => (
+        <div key={t.token} className="flex items-center gap-3">
+          <div className="h-8 w-8 shrink-0 rounded-md border border-border/40 shadow-sm" style={{ background: t.cssVar }} />
+          <div className="min-w-0 flex-1">
+            <div className="text-sm font-medium text-text-primary">{t.label}</div>
+            <code className="text-xs text-text-muted font-mono">{t.token}</code>
+          </div>
+        </div>
+      ))}
     </div>
-  ))}
+  </div>
+
+  <div className="rounded-2xl border border-border/40 bg-surface p-6 space-y-5">
+    <h3 className="m-0 text-sm font-medium text-text-muted uppercase tracking-wider">Semantic colors</h3>
+    <div className="space-y-3">
+      {[
+        { token: "--color-success", label: "Success", cssVar: "var(--color-success)", muted: "var(--color-success-muted)" },
+        { token: "--color-danger", label: "Danger", cssVar: "var(--color-danger)", muted: "var(--color-danger-muted)" },
+        { token: "--color-warning", label: "Warning", cssVar: "var(--color-warning)", muted: "var(--color-warning-muted)" },
+        { token: "--color-info", label: "Info", cssVar: "var(--color-info)", muted: "var(--color-info-muted)" },
+      ].map((t) => (
+        <div key={t.token} className="flex items-center gap-3">
+          <div className="h-8 w-8 shrink-0 rounded-full shadow-sm" style={{ background: t.cssVar }} />
+          <div className="h-8 w-8 shrink-0 rounded-full border border-border/40 shadow-sm" style={{ background: t.muted }} />
+          <div className="min-w-0 flex-1">
+            <div className="text-sm font-medium text-text-primary">{t.label}</div>
+            <code className="text-xs text-text-muted font-mono">{t.token}</code>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<div className="mt-6 grid gap-6 sm:grid-cols-3">
+  <div className="rounded-2xl border border-border/40 bg-surface p-5 space-y-3">
+    <h3 className="m-0 text-xs font-medium text-text-muted uppercase tracking-wider">Font sizes</h3>
+    <div className="space-y-2">
+      {[
+        ["xs", "Extra small"],
+        ["sm", "Small"],
+        ["base", "Base"],
+        ["lg", "Large"],
+        ["xl", "Extra large"],
+        ["2xl", "2X Large"],
+        ["3xl", "3X Large"],
+      ].map(([size, label]) => (
+        <div key={size} className="flex items-center justify-between">
+          <span className="text-text-primary" style={{ fontSize: `var(--font-size-${size})` }}>{label}</span>
+          <code className="text-xs text-text-muted font-mono">--font-size-{size}</code>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div className="rounded-2xl border border-border/40 bg-surface p-5 space-y-3">
+    <h3 className="m-0 text-xs font-medium text-text-muted uppercase tracking-wider">Spacing scale</h3>
+    <div className="space-y-1">
+      {[1, 2, 3, 4, 5, 6, 8, 10, 12, 16].map((s) => (
+        <div key={s} className="flex items-center gap-3">
+          <span className="text-xs text-text-muted font-mono w-16 shrink-0">--spacing-{s}</span>
+          <div className="h-3 rounded-sm bg-brand/20" style={{ width: `calc(${s * 4 / 16} * 100%)` }} />
+          <span className="text-xs text-text-muted tabular-nums">{s * 0.25}rem</span>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div className="rounded-2xl border border-border/40 bg-surface p-5 space-y-3">
+    <h3 className="m-0 text-xs font-medium text-text-muted uppercase tracking-wider">Radii</h3>
+    <div className="space-y-3">
+      {[
+        ["sm", "0.25rem"],
+        ["md", "0.5rem"],
+        ["lg", "0.75rem"],
+        ["full", "9999px"],
+      ].map(([r, val]) => (
+        <div key={r} className="flex items-center gap-3">
+          <div className="h-8 w-16 border-2 border-brand bg-brand/10 shrink-0" style={{ borderRadius: `var(--radius-${r})` }} />
+          <div>
+            <code className="text-xs text-text-primary font-mono">--radius-{r}</code>
+            <div className="text-xs text-text-muted">{val}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
 </div>
 
 <div className="mt-12 rounded-3xl border border-border/40 bg-surface p-8 text-center">

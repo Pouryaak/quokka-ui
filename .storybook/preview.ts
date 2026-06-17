@@ -23,8 +23,10 @@ const preview: Preview = {
           "Components",
           [
             "Button",
+            "Badge",
             "Card",
             "Checkbox",
+            "DataTable",
             "Input",
             "Select",
             "Table",
